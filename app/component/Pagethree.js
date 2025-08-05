@@ -170,12 +170,12 @@ const Pagethree = () => {
 
 
   return (
-    <div ref={buttonRef} className='relative pt-[90px] pb-[400px] md:px-7 px-6'>
-      <div className='w-full container mx-auto px-6 sm:px-0'>
+    <div ref={buttonRef} className='relative pt-[32px] sm:pt-[36px] md:pt-[40px] lg:pt-[48px] xl:pt-[64px] 2xl:pt-[90px] pb-[400px] md:px-7 px-6'>
+      <div className='w-full container mx-auto'>
          <h1 className='tesfastaastas text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[64px] 2xl:text-[96px] pt-[12px] sm:pt-[13px] md:pt-[14px] lg:pt-[15px] xl:pt-[16px] 2xl:pt-[19px] inline-block'>
             Тут твои настройки и маркет дополнительных пакетов
           </h1>
-          <div className='grid grid-cols-2 pt-[85px] gap-[10px] sm:gap-[20px] md:gap-[24px] lg:gap-[32px] xl:gap-[36px] 2xl:gap-[42px]'>
+          <div className='grid grid-cols-2 pt-[32px] sm:pt-[36px] md:pt-[40px] lg:pt-[48px] xl:pt-[64px] 2xl:pt-[85px] gap-[10px] sm:gap-[20px] md:gap-[24px] lg:gap-[32px] xl:gap-[36px] 2xl:gap-[42px]'>
             <div className='paddinoiuretheesthree rounded-[16px] sm:rounded-[20px] md:rounded-[24px] lg:rounded-[32px] xl:rounded-[36px] 2xl:rounded-[40px] pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[47px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[45px] pb-[15px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[65px] relative overflow-hidden flex flex-col justify-between'>
             <Image src={datatwo[0].backgroundimage} alt="test" className='absolute right-0 bottom-0 w-full bg-cover' />
               <div className='w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[79px]' dangerouslySetInnerHTML={{ __html: datatwo[0].imagesvg }} />

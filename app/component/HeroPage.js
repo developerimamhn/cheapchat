@@ -202,6 +202,60 @@ const textRefs = useRef(null);
       }
     );
   }, []);
+  useEffect(() => {
+        // GSAP animations
+        gsap.from('.grid-item-1', {
+          opacity: 0,
+          y: 100,
+          duration: 1,
+          ease: 'power3.out'
+        });
+
+        gsap.from('.grid-item-2', {
+          opacity: 0,
+          x: 100,
+          duration: 1,
+          delay: 0.3,
+          ease: 'power3.out'
+        });
+
+        gsap.from('.grid-item-3', {
+          opacity: 0,
+          x: 100,
+          duration: 1,
+          delay: 0.6,
+          ease: 'power3.out'
+        });
+
+        // Staggered animations for child elements
+        gsap.from('.grid-item-1 > *', {
+          opacity: 0,
+          y: 20,
+          duration: 0.8,
+          stagger: 0.2,
+          ease: 'power2.out',
+          delay: 0.5
+        });
+
+        gsap.from('.grid-item-2 > *', {
+          opacity: 0,
+          y: 20,
+          duration: 0.8,
+          stagger: 0.2,
+          ease: 'power2.out',
+          delay: 0.8
+        });
+
+        gsap.from('.grid-item-3 > *', {
+          opacity: 0,
+          y: 20,
+          duration: 0.8,
+          stagger: 0.2,
+          ease: 'power2.out',
+          delay: 1.1
+        });
+      }, []);
+
 
     return (
         <div id="hero" ref={buttonRef} className='relative z-10 md:px-7 px-6'>
@@ -212,11 +266,11 @@ const textRefs = useRef(null);
                     <h1 ref={textRef} className='text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[55px]'>
                       <span className='tesfastaas'>Слава тебе чемпион, $username</span><span>👋</span>
                       </h1>
-                      <h1 ref={textRefs} className='tesfastaastas text-[36px] sm:text-[40px] md:text-[48px] lg:text-[65px] xl:text-[80px] pt-[12px] sm:pt-[13px] md:pt-[14px] lg:pt-[15px] xl:pt-[16px] 2xl:pt-[19spx] inline-block'>
+                      <h1 className='tesfastaastas text-[36px] sm:text-[40px] md:text-[48px] lg:text-[65px] xl:text-[80px] pt-[12px] sm:pt-[13px] md:pt-[14px] lg:pt-[15px] xl:pt-[16px] 2xl:pt-[19px] inline-block'>
                         Чем я могу тебе помочь?
                       </h1>
                       <div className='grid grid-cols-2 pt-[24px] sm:pt-[32px] md:pt-[36px] lg:pt-[40px] xl:pt-[48px] 2xl:pt-[55px] gap-[10px] sm:gap-[20px] md:gap-[24px] lg:gap-[32px] xl:gap-[36px] 2xl:gap-[42px]'>
-                        <div className='paddinoiurethees rounded-[16px] sm:rounded-[20px] md:rounded-[24px] lg:rounded-[32px] xl:rounded-[36px] 2xl:rounded-[40px] pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[47px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[45px] pb-[15px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[65px] relative overflow-hidden flex flex-col justify-between'>
+                        <div className='grid-item-1 paddinoiurethees rounded-[16px] sm:rounded-[20px] md:rounded-[24px] lg:rounded-[32px] xl:rounded-[36px] 2xl:rounded-[40px] pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[47px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[45px] pb-[15px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[65px] relative overflow-hidden flex flex-col justify-between'>
                           <div className='w-full absolute right-0 bottom-0' dangerouslySetInnerHTML={{ __html: dataone[0].backgroundimage }} />
                           <div className='w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[79px] bureeffefcdtewwa' dangerouslySetInnerHTML={{ __html: dataone[0].imagesvg }} />
                           <h1 className='imageonedata text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[32px] inline-block pt-[10px] sm:pt-[11px] md:pt-[12px] lg:pt-[13px]' dangerouslySetInnerHTML={{ __html: dataone[0].textone }}></h1>
@@ -224,7 +278,7 @@ const textRefs = useRef(null);
                           <button className='texndserbtnback w-full py-[8px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[20px] 2xl:py-[24px]' ><span className='texndserbtn text-[18px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px]' dangerouslySetInnerHTML={{ __html: dataone[0].textbtn }}></span></button>
                         </div>
                         <div className='grid grid-rows-2 gap-[15px] sm:gap-[24px] md:gap-[32px] lg:gap-[36px] xl:gap-[40px] 2xl:gap-[47px]'>
-                          <div className='paddinoiuretheessnap rounded-[16px] sm:rounded-[20px] md:rounded-[24px] lg:rounded-[32px] xl:rounded-[36px] 2xl:rounded-[40px] !border-[#00000026] !border-[1px] pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[47px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[45px] pb-[15px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[65px] relative overflow-hidden'>
+                          <div className='grid-item-2 paddinoiuretheessnap rounded-[16px] sm:rounded-[20px] md:rounded-[24px] lg:rounded-[32px] xl:rounded-[36px] 2xl:rounded-[40px] !border-[#00000026] !border-[1px] pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[47px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[45px] pb-[15px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[65px] relative overflow-hidden'>
                               <div className='w-full absolute right-0 bottom-0' dangerouslySetInnerHTML={{ __html: dataone[1].backgroundimage }} />
                               <div className='w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[79px] bureeffefcdtewwa' dangerouslySetInnerHTML={{ __html: dataone[1].imagesvg }} />
                               <h1 className='imageonedatathreon text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px] pt-[15px] pb-[17px]' dangerouslySetInnerHTML={{ __html: dataone[1].terxttwo }}></h1>
@@ -233,7 +287,7 @@ const textRefs = useRef(null);
                                 <div className='text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[64px] 2xl:text-[77px]' dangerouslySetInnerHTML={{ __html: dataone[1].svgbutton }} />
                               </div>
                           </div>
-                        <div className='paddinoiuretheessnap rounded-[16px] sm:rounded-[20px] md:rounded-[24px] lg:rounded-[32px] xl:rounded-[36px] 2xl:rounded-[40px] !border-[#00000026] !border-[1px] pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[47px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[45px] pb-[15px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[65px] relative overflow-hidden flex flex-col justify-between'>
+                        <div className='paddinoiuretheessnap rounded-[16px] sm:rounded-[20px] md:rounded-[24px] lg:rounded-[32px] xl:rounded-[36px] 2xl:rounded-[40px] !border-[#00000026] !border-[1px] pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[47px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[45px] pb-[15px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[65px] relative overflow-hidden flex flex-col justify-between grid-item-3'>
                             <div className='w-full absolute right-0 bottom-0' dangerouslySetInnerHTML={{ __html: dataone[2].backgroundimage }} />
                             <div className='w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[79px] bureeffefcdtewwa' dangerouslySetInnerHTML={{ __html: dataone[2].imagesvg }} />
                             <h1 className='imageonedatathreon text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px] pt-[15px] pb-[17px]' dangerouslySetInnerHTML={{ __html: dataone[2].terxttwo }}></h1>
