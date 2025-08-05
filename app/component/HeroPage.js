@@ -2,12 +2,14 @@
 
 
 import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import Image from 'next/image';
-import image1 from './image/image1 (2).png';
 
 
 
@@ -80,13 +82,13 @@ const HeroPage = () => {
   }, []);
   
   const dataone = [  {
-  imagesvg : `<svg className='w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[79px]' viewBox="0 0 79 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+  imagesvg : `<svg className='w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[32px]' viewBox="0 0 79 78" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="79" height="78" rx="39" fill="#897F7F" fill-opacity="0.2"/>
               <path d="M47.2917 37.9583H47.3125M38.9583 37.9583H38.9792M30.625 37.9583H30.6458M46.8751 53.7918L58.7501 57.7501L54.7917 45.8751C54.7917 45.8751 56.6667 43.1667 56.6667 37.9583C56.6667 28.1783 48.7384 20.25 38.9583 20.25C29.1783 20.25 21.25 28.1783 21.25 37.9583C21.25 47.7384 29.1783 55.6667 38.9583 55.6667C44.3431 55.6667 46.8751 53.7918 46.8751 53.7918Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
               `,
-  textone : 'Осталось лимитов <br/> 100%',
-  terxttwo : 'Начнем<br/>новый<br/>диалог?',
+  textone : 'Осталось лимитов <br className="sm:block hidden" /> 100%',
+  terxttwo : 'Начнем<br className="sm:block hidden" />новый<br className="sm:block hidden" />диалог?',
   textbtn : 'НАЧАТЬ',
   backgroundimage : `<svg viewBox="0 0 526 514" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#paint0_angular_2007_2706_clip_path)" data-figma-skip-parse="true"><g transform="matrix(-0.197454 0.147266 -0.179868 -0.20861 456.285 331.49)"><foreignObject x="-2636.25" y="-2636.25" width="5272.49" height="5272.49"><div xmlns="http://www.w3.org/1999/xhtml" style="background:conic-gradient(from 90deg,rgba(122, 171, 240, 0.49) 0deg,rgba(245, 245, 245, 0.5) 90deg,rgba(0, 98, 236, 0.48) 270deg,rgba(122, 171, 240, 0.49) 360deg);height:100%;width:100%;opacity:0.4"></div></foreignObject></g></g><path d="M186 632H273.5C273.5 603.583 284.357 559.668 309.604 505.329C334.144 452.514 369.31 396.225 410.383 344.78C451.601 293.153 496.762 248.914 540.146 218.352C584.995 186.758 619.719 175.5 642 175.5V88V0.5C568.286 0.5 498.012 33.9709 439.362 75.2873C379.246 117.637 322.406 174.491 273.623 235.593C224.696 296.876 181.86 364.952 150.898 431.59C120.644 496.704 98.5 567.332 98.5 632H186Z" data-figma-gradient-fill="{&#34;type&#34;:&#34;GRADIENT_ANGULAR&#34;,&#34;stops&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.96078431606292725,&#34;g&#34;:0.96078431606292725,&#34;b&#34;:0.96078431606292725,&#34;a&#34;:0.50},&#34;position&#34;:0.250},{&#34;color&#34;:{&#34;r&#34;:0.0,&#34;g&#34;:0.38752788305282593,&#34;b&#34;:0.92788463830947876,&#34;a&#34;:0.47999998927116394},&#34;position&#34;:0.750}],&#34;stopsVar&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.96078431606292725,&#34;g&#34;:0.96078431606292725,&#34;b&#34;:0.96078431606292725,&#34;a&#34;:0.50},&#34;position&#34;:0.250},{&#34;color&#34;:{&#34;r&#34;:0.0,&#34;g&#34;:0.38752788305282593,&#34;b&#34;:0.92788463830947876,&#34;a&#34;:0.47999998927116394},&#34;position&#34;:0.750}],&#34;transform&#34;:{&#34;m00&#34;:-394.90896606445312,&#34;m01&#34;:-359.73614501953125,&#34;m02&#34;:833.60748291015625,&#34;m10&#34;:294.53298950195312,&#34;m11&#34;:-417.21966552734375,&#34;m12&#34;:392.83352661132812},&#34;opacity&#34;:0.40000000596046448,&#34;blendMode&#34;:&#34;NORMAL&#34;,&#34;visible&#34;:true}"/>
@@ -97,7 +99,7 @@ const HeroPage = () => {
 `
 },
   {
-  imagesvg : `<svg width="79" height="78" viewBox="0 0 79 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+  imagesvg : `<svg text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[64px] 2xl:text-[77px]" viewBox="0 0 79 78" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="79" height="78" rx="39" fill="#897F7F" fill-opacity="0.2"/>
 <path d="M48.3333 45.25H31.6666C27.0642 45.25 23.3333 48.981 23.3333 53.5833V57.75H56.6666V53.5833C56.6666 48.981 52.9356 45.25 48.3333 45.25Z" fill="black" fill-opacity="0.15"/>
 <path d="M39.9999 36.9167C44.6023 36.9167 48.3333 33.1857 48.3333 28.5833C48.3333 23.981 44.6023 20.25 39.9999 20.25C35.3975 20.25 31.6666 23.981 31.6666 28.5833C31.6666 33.1857 35.3975 36.9167 39.9999 36.9167Z" fill="black" fill-opacity="0.15"/>
@@ -105,7 +107,7 @@ const HeroPage = () => {
 </svg>
 `,
   textone : 'Готовые роли AI для конкретных задач',
-  terxttwo : 'Готовые роли AI для <br/> конкретных задач',
+  terxttwo : 'Готовые роли AI для <br className="sm:block hidden" /> конкретных задач',
   textbtn : 'ВЫБРАТЬ',
   backgroundimage : `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 526 238" fill="none">
   <g clip-path="url(#paint0_angular_300_1781_clip_path)" data-figma-skip-parse="true"><g transform="matrix(-0.288569 0.0218358 -0.10388 -0.29214 297.893 238.105)"><foreignObject x="-2517.81" y="-2517.81" width="5035.62" height="5035.62"><div xmlns="http://www.w3.org/1999/xhtml" style="background:conic-gradient(from 90deg,rgba(122, 171, 240, 0.49) 0deg,rgba(245, 245, 245, 0.5) 90deg,rgba(0, 98, 236, 0.48) 270deg,rgba(122, 171, 240, 0.49) 360deg);height:100%;width:100%;opacity:0.4"></div></foreignObject></g></g><path d="M-143 358.051L-65.0369 397.775C-53.5186 375.17 -23.1871 342.626 30.3178 307.418C81.8506 273.509 147.241 242.156 217.521 218.466C287.826 194.766 360.177 179.695 425.305 176.402C491.546 173.052 543.425 182.206 578.276 199.963L618 122L657.724 44.0369C585.492 7.23267 499.499 -2.5733 416.467 1.62528C332.322 5.88014 244 24.8646 161.621 52.6337C79.2154 80.4115 -0.091001 117.94 -65.878 161.229C-129.693 203.22 -189.304 256.193 -220.963 318.327L-143 358.051Z" data-figma-gradient-fill="{&quot;type&quot;:&quot;GRADIENT_ANGULAR&quot;,&quot;stops&quot;:[{&quot;color&quot;:{&quot;r&quot;:0.96078431606292725,&quot;g&quot;:0.96078431606292725,&quot;b&quot;:0.96078431606292725,&quot;a&quot;:0.50},&quot;position&quot;:0.250},{&quot;color&quot;:{&quot;r&quot;:0.0,&quot;g&quot;:0.38752788305282593,&quot;b&quot;:0.92788463830947876,&quot;a&quot;:0.47999998927116394},&quot;position&quot;:0.750}],&quot;stopsVar&quot;:[{&quot;color&quot;:{&quot;r&quot;:0.96078431606292725,&quot;g&quot;:0.96078431606292725,&quot;b&quot;:0.96078431606292725,&quot;a&quot;:0.50},&quot;position&quot;:0.250},{&quot;color&quot;:{&quot;r&quot;:0.0,&quot;g&quot;:0.38752788305282593,&quot;b&quot;:0.92788463830947876,&quot;a&quot;:0.47999998927116394},&quot;position&quot;:0.750}],&quot;transform&quot;:{&quot;m00&quot;:-577.1386718750,&quot;m01&quot;:-207.75950622558594,&quot;m02&quot;:690.34210205078125,&quot;m10&quot;:43.671615600585938,&quot;m11&quot;:-584.28094482421875,&quot;m12&quot;:508.41006469726562},&quot;opacity&quot;:0.40000000596046448,&quot;blendMode&quot;:&quot;NORMAL&quot;,&quot;visible&quot;:true}"/>
@@ -177,6 +179,30 @@ const HeroPage = () => {
 
 ]
 
+const textRefs = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(
+      textRef.current,
+      {
+        y: 100,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1.2,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: textRef.current,
+          start: 'top 80%',
+          end: 'bottom 60%',
+          toggleActions: 'play none none reverse',
+        },
+      }
+    );
+  }, []);
+
     return (
         <div id="hero" ref={buttonRef} className='relative z-10 md:px-7 px-6'>
           <div className='relative z-[2] container mx-auto'>
@@ -186,34 +212,34 @@ const HeroPage = () => {
                     <h1 ref={textRef} className='text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[55px]'>
                       <span className='tesfastaas'>Слава тебе чемпион, $username</span><span>👋</span>
                       </h1>
-                      <h1 className='tesfastaastas text-[36px] sm:text-[40px] md:text-[48px] lg:text-[65px] xl:text-[80px] pt-[12px] sm:pt-[13px] md:pt-[14px] lg:pt-[15px] xl:pt-[16px] 2xl:pt-[19spx] inline-block'>
+                      <h1 ref={textRefs} className='tesfastaastas text-[36px] sm:text-[40px] md:text-[48px] lg:text-[65px] xl:text-[80px] pt-[12px] sm:pt-[13px] md:pt-[14px] lg:pt-[15px] xl:pt-[16px] 2xl:pt-[19spx] inline-block'>
                         Чем я могу тебе помочь?
                       </h1>
-                      <div className='grid grid-cols-1 md:grid-cols-2 pt-[24px] sm:pt-[32px] md:pt-[36px] lg:pt-[40px] xl:pt-[48px] 2xl:pt-[55px] gap-[42px]'>
-                        <div className='paddinoiurethees pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[47px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[45px] pb-[24px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[65px] relative overflow-hidden flex flex-col justify-between'>
+                      <div className='grid grid-cols-2 pt-[24px] sm:pt-[32px] md:pt-[36px] lg:pt-[40px] xl:pt-[48px] 2xl:pt-[55px] gap-[10px] sm:gap-[20px] md:gap-[24px] lg:gap-[32px] xl:gap-[36px] 2xl:gap-[42px]'>
+                        <div className='paddinoiurethees rounded-[16px] sm:rounded-[20px] md:rounded-[24px] lg:rounded-[32px] xl:rounded-[36px] 2xl:rounded-[40px] pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[47px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[45px] pb-[15px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[65px] relative overflow-hidden flex flex-col justify-between'>
                           <div className='w-full absolute right-0 bottom-0' dangerouslySetInnerHTML={{ __html: dataone[0].backgroundimage }} />
-                          <div className='w-[79px]' dangerouslySetInnerHTML={{ __html: dataone[0].imagesvg }} />
-                          <h1 className='imageonedata text-[32px] inline-block pt-[10px] sm:pt-[11px] md:pt-[12px] lg:pt-[13px]' dangerouslySetInnerHTML={{ __html: dataone[0].textone }}></h1>
-                          <h1 className='imageonedatathre text-[70px] pt-[88px] pb-[78px]' dangerouslySetInnerHTML={{ __html: dataone[0].terxttwo }}></h1>
-                          <button className='texndserbtnback w-full py-[26px]' ><span className='texndserbtn text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px]' dangerouslySetInnerHTML={{ __html: dataone[0].textbtn }}></span></button>
+                          <div className='w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[79px] bureeffefcdtewwa' dangerouslySetInnerHTML={{ __html: dataone[0].imagesvg }} />
+                          <h1 className='imageonedata text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[32px] inline-block pt-[10px] sm:pt-[11px] md:pt-[12px] lg:pt-[13px]' dangerouslySetInnerHTML={{ __html: dataone[0].textone }}></h1>
+                          <h1 className='imageonedatathre text-[20px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[64px] 2xl:text-[96px] pt-[88px] pb-[78px]' dangerouslySetInnerHTML={{ __html: dataone[0].terxttwo }}></h1>
+                          <button className='texndserbtnback w-full py-[8px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[20px] 2xl:py-[24px]' ><span className='texndserbtn text-[18px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px]' dangerouslySetInnerHTML={{ __html: dataone[0].textbtn }}></span></button>
                         </div>
-                        <div className='grid grid-rows-2 gap-[47px]'>
-                          <div className='paddinoiuretheessnap !border-[#00000026] !border-[1px] pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[47px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[45px] pb-[24px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[65px] relative overflow-hidden'>
+                        <div className='grid grid-rows-2 gap-[15px] sm:gap-[24px] md:gap-[32px] lg:gap-[36px] xl:gap-[40px] 2xl:gap-[47px]'>
+                          <div className='paddinoiuretheessnap rounded-[16px] sm:rounded-[20px] md:rounded-[24px] lg:rounded-[32px] xl:rounded-[36px] 2xl:rounded-[40px] !border-[#00000026] !border-[1px] pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[47px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[45px] pb-[15px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[65px] relative overflow-hidden'>
                               <div className='w-full absolute right-0 bottom-0' dangerouslySetInnerHTML={{ __html: dataone[1].backgroundimage }} />
-                              <div className='w-[79px]' dangerouslySetInnerHTML={{ __html: dataone[1].imagesvg }} />
-                              <h1 className='imageonedatathreon text-[40px] pt-[15px] pb-[17px]' dangerouslySetInnerHTML={{ __html: dataone[1].terxttwo }}></h1>
-                              <div className='flex gap-[33px]'>
-                                <button className='texndserbtnback !bg-[#454e71c9] w-full py-[24px]' ><span className='texndserbtn text-[30px]' dangerouslySetInnerHTML={{ __html: dataone[1].textbtn }}></span></button>
-                                <div className='w-[77px]' dangerouslySetInnerHTML={{ __html: dataone[1].svgbutton }} />
+                              <div className='w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[79px] bureeffefcdtewwa' dangerouslySetInnerHTML={{ __html: dataone[1].imagesvg }} />
+                              <h1 className='imageonedatathreon text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px] pt-[15px] pb-[17px]' dangerouslySetInnerHTML={{ __html: dataone[1].terxttwo }}></h1>
+                              <div className='flex gap-[14px] sm:gap-[15px] md:gap-[16px] lg:gap-[20px] xl:gap-[24px] 2xl:gap-[33px]'>
+                                <button className='texndserbtnback !bg-[#454e71c9] w-full py-[2px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[20px] 2xl:py-[24px]' ><span className='texndserbtn text-[10px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[30px]' dangerouslySetInnerHTML={{ __html: dataone[1].textbtn }}></span></button>
+                                <div className='text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[64px] 2xl:text-[77px]' dangerouslySetInnerHTML={{ __html: dataone[1].svgbutton }} />
                               </div>
                           </div>
-                        <div className='paddinoiuretheessnap !border-[#00000026] !border-[1px] pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[47px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[45px] pb-[24px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[65px] relative overflow-hidden flex flex-col justify-between'>
+                        <div className='paddinoiuretheessnap rounded-[16px] sm:rounded-[20px] md:rounded-[24px] lg:rounded-[32px] xl:rounded-[36px] 2xl:rounded-[40px] !border-[#00000026] !border-[1px] pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[47px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[45px] pb-[15px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[65px] relative overflow-hidden flex flex-col justify-between'>
                             <div className='w-full absolute right-0 bottom-0' dangerouslySetInnerHTML={{ __html: dataone[2].backgroundimage }} />
-                            <div className='w-[79px]' dangerouslySetInnerHTML={{ __html: dataone[2].imagesvg }} />
-                            <h1 className='imageonedatathreon text-[40px] pt-[15px] pb-[17px]' dangerouslySetInnerHTML={{ __html: dataone[2].terxttwo }}></h1>
-                            <div className='flex gap-[33px]'>
-                              <button className='texndserbtnback !bg-[#454e71c9] w-full py-[24px]' ><span className='texndserbtn text-[30px]' dangerouslySetInnerHTML={{ __html: dataone[2].textbtn }}></span></button>
-                              <div className='w-[77px]' dangerouslySetInnerHTML={{ __html: dataone[2].svgbutton }} />
+                            <div className='w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[79px] bureeffefcdtewwa' dangerouslySetInnerHTML={{ __html: dataone[2].imagesvg }} />
+                            <h1 className='imageonedatathreon text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px] pt-[15px] pb-[17px]' dangerouslySetInnerHTML={{ __html: dataone[2].terxttwo }}></h1>
+                            <div className='flex gap-[14px] sm:gap-[15px] md:gap-[16px] lg:gap-[20px] xl:gap-[24px] 2xl:gap-[33px]'>
+                              <button className='texndserbtnback !bg-[#454e71c9] w-full py-[2px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[20px] 2xl:py-[24px]' ><span className='texndserbtn text-[10px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[30px]' dangerouslySetInnerHTML={{ __html: dataone[2].textbtn }}></span></button>
+                              <div className='text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[64px] 2xl:text-[77px] ' dangerouslySetInnerHTML={{ __html: dataone[2].svgbutton }} />
                             </div>
                         </div>
                       </div>
