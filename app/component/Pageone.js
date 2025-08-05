@@ -170,8 +170,8 @@ const Pageone = () => {
 
 
   return (
-    <div ref={buttonRef} className='relative pt-[90px]'>
-      <svg className='absolute left-0 top-0 w-full' viewBox="0 0 1290 2883" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div ref={buttonRef} className='relative pt-[90px] md:px-7 px-6'>
+      <svg className='absolute left-0 top-0 w-full -z-[1]' viewBox="0 0 1290 2883" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g opacity="0.15">
 <path d="M-41.1748 1096.69L615.732 912.784L654.546 812.372L17.5387 990.835L-41.1748 1096.69Z" fill="#0E4BE4" fill-opacity="0.2"/>
 <path d="M612.813 909.312L654.546 812.372L723.149 894.13L689.039 1000.15L612.813 909.312Z" fill="#CCCCCC" fill-opacity="0.2"/>
@@ -244,9 +244,9 @@ const Pageone = () => {
          <h1 className='tesfastaastas text-[80px] pt-[12px] sm:pt-[13px] md:pt-[14px] lg:pt-[15px] xl:pt-[16px] 2xl:pt-[19spx] inline-block'>
             Может тебе сгенерировать изображение?
           </h1>
-          <div className='grid grid-cols-2 pt-[85px] gap-[42px]'>
+          <div className='grid grid-cols-1 md:grid-cols-2 pt-[85px] gap-[42px]'>
             <div className='paddinoiuretheesone pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[47px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[45px] pb-[24px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[65px] relative overflow-hidden flex flex-col justify-between'>
-            <Image src={datatwo[0].backgroundimage} alt="test" className='absolute right-0 bottom-0 w-5/7' />
+            <Image src={datatwo[0].backgroundimage} alt="test" className='absolute -right-10 bottom-0 h-[95%]' />
               <div className='w-[79px]' dangerouslySetInnerHTML={{ __html: datatwo[0].imagesvg }} />
               <h1 className='imageonedata text-[32px] inline-block pt-[10px] sm:pt-[11px] md:pt-[12px] lg:pt-[13px]' dangerouslySetInnerHTML={{ __html: datatwo[0].textone }}></h1>
               <h1 className='imageonedatathre text-[70px] pt-[88px] pb-[78px]' dangerouslySetInnerHTML={{ __html: datatwo[0].terxttwo }}></h1>
@@ -254,21 +254,21 @@ const Pageone = () => {
             </div>
             <div className='grid grid-rows-2 gap-[47px]'>
               <div className='paddinoiuretheesone !border-[#00000026] !border-[1px] pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[47px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[45px] pb-[24px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[65px] relative overflow-hidden'>
-                  <Image src={datatwo[2].backgroundimage} alt="test" className='absolute left-0 bottom-0 h-full' />
+                  <Image src={datatwo[2].backgroundimage} alt="test" className='absolute left-0 bottom-0 h-[100%] w-[60%]' />
                   <div className='w-[79px]' dangerouslySetInnerHTML={{ __html: datatwo[1].imagesvg }} />
                   <h1 className='imageonedatathreon text-[40px] pt-[15px] pb-[17px]' dangerouslySetInnerHTML={{ __html: datatwo[1].terxttwo }}></h1>
-                  <div className='flex gap-[33px] items-center '>
-                    <button className='texndserbtnback !bg-[#454e71c9] w-full py-[24px]' ><span className='texndserbtn text-[30px]' dangerouslySetInnerHTML={{ __html: datatwo[1].textbtn }}></span></button>
-                    <div className='w-[77px]' dangerouslySetInnerHTML={{ __html: datatwo[1].svgbutton }} />
+                  <div className='flex gap-[33px] items-center'>
+                    <button className='texndserbtnback !bg-[#454e71c9] w-full py-[24px] relative z-10' ><span className='texndserbtn text-[30px]' dangerouslySetInnerHTML={{ __html: datatwo[1].textbtn }}></span></button>
+                    <div className='w-[120px]' dangerouslySetInnerHTML={{ __html: datatwo[1].svgbutton }} />
                   </div>
               </div>
             <div className='paddinoiuretheesone !border-[#00000026] !border-[1px] pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[47px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[45px] pb-[24px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[65px] relative overflow-hidden flex flex-col justify-between'>
-                <Image src={datatwo[1].backgroundimage} alt="test" className='absolute left-0 bottom-0 h-full' />
+                <Image src={datatwo[1].backgroundimage} alt="test" className='absolute left-0 bottom-0 h-[100%]  w-[70%]' />
                 <div className='w-[79px]' dangerouslySetInnerHTML={{ __html: datatwo[2].imagesvg }} />
                 <h1 className='imageonedatathreon text-[40px] pt-[15px] pb-[17px]' dangerouslySetInnerHTML={{ __html: datatwo[2].terxttwo }}></h1>
                 <div className='flex gap-[33px] items-center '>
                   <button className='texndserbtnback !bg-[#454e71c9] w-full py-[24px]' ><span className='texndserbtn text-[30px]' dangerouslySetInnerHTML={{ __html: datatwo[2].textbtn }}></span></button>
-                  <div className='w-[77px]' dangerouslySetInnerHTML={{ __html: datatwo[2].svgbutton }} />
+                  <div className='w-[77px]' dangerouslySetInnerHTML={{ __html: datatwo[2].svgbutton }}/>
                 </div>
             </div>
           </div>

@@ -178,18 +178,18 @@ const HeroPage = () => {
 ]
 
     return (
-        <div id="hero" ref={buttonRef} className='relative z-10'>
+        <div id="hero" ref={buttonRef} className='relative z-10 md:px-7 px-6'>
           <div className='relative z-[2] container mx-auto'>
-              <div className='pt-[80px] sm:pt-[81px] md:pt-[150px] xl:pt-[210px] 2xl:pt-[300px] w-full relative'>
+              <div className='pt-[120px] sm:pt-[141px] md:pt-[150px] xl:pt-[210px] 2xl:pt-[300px] w-full relative'>
                 <div className=''>
                   <div className=''>
                     <h1 ref={textRef} className='text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[55px]'>
                       <span className='tesfastaas'>Слава тебе чемпион, $username</span><span>👋</span>
                       </h1>
-                      <h1 className='tesfastaastas text-[80px] pt-[12px] sm:pt-[13px] md:pt-[14px] lg:pt-[15px] xl:pt-[16px] 2xl:pt-[19spx] inline-block'>
+                      <h1 className='tesfastaastas text-[36px] sm:text-[40px] md:text-[48px] lg:text-[65px] xl:text-[80px] pt-[12px] sm:pt-[13px] md:pt-[14px] lg:pt-[15px] xl:pt-[16px] 2xl:pt-[19spx] inline-block'>
                         Чем я могу тебе помочь?
                       </h1>
-                      <div className='grid grid-cols-2 pt-[24px] sm:pt-[32px] md:pt-[36px] lg:pt-[40px] xl:pt-[48px] 2xl:pt-[55px] gap-[42px]'>
+                      <div className='grid grid-cols-1 md:grid-cols-2 pt-[24px] sm:pt-[32px] md:pt-[36px] lg:pt-[40px] xl:pt-[48px] 2xl:pt-[55px] gap-[42px]'>
                         <div className='paddinoiurethees pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[47px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[45px] pb-[24px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[65px] relative overflow-hidden flex flex-col justify-between'>
                           <div className='w-full absolute right-0 bottom-0' dangerouslySetInnerHTML={{ __html: dataone[0].backgroundimage }} />
                           <div className='w-[79px]' dangerouslySetInnerHTML={{ __html: dataone[0].imagesvg }} />

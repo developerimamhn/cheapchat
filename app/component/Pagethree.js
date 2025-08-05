@@ -170,14 +170,14 @@ const Pagethree = () => {
 
 
   return (
-    <div ref={buttonRef} className='relative pt-[90px] pb-[400px]'>
+    <div ref={buttonRef} className='relative pt-[90px] pb-[400px] md:px-7 px-6'>
       <div className='w-full container mx-auto px-6 sm:px-0'>
          <h1 className='tesfastaastas text-[80px] pt-[12px] sm:pt-[13px] md:pt-[14px] lg:pt-[15px] xl:pt-[16px] 2xl:pt-[19spx] inline-block'>
             Тут твои настройки и маркет дополнительных пакетов
           </h1>
-          <div className='grid grid-cols-2 pt-[85px] gap-[42px]'>
+          <div className='grid grid-cols-1 md:grid-cols-2 pt-[85px] gap-[42px]'>
             <div className='paddinoiuretheesthree pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[47px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[45px] pb-[24px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[65px] relative overflow-hidden flex flex-col justify-between'>
-            <Image src={datatwo[0].backgroundimage} alt="test" className='absolute right-0 bottom-0 w-full' />
+            <Image src={datatwo[0].backgroundimage} alt="test" className='absolute right-0 bottom-0 w-full bg-cover' />
               <div className='w-[79px]' dangerouslySetInnerHTML={{ __html: datatwo[0].imagesvg }} />
               <h1 className='imageonedata text-[32px] inline-block pt-[10px] sm:pt-[11px] md:pt-[12px] lg:pt-[13px]' dangerouslySetInnerHTML={{ __html: datatwo[0].textone }}></h1>
               <h1 className='imageonedatathre text-[70px] pt-[88px] pb-[78px]' dangerouslySetInnerHTML={{ __html: datatwo[0].terxttwo }}></h1>
@@ -185,7 +185,7 @@ const Pagethree = () => {
             </div>
             <div className='grid grid-rows-2 gap-[47px]'>
               <div className='paddinoiuretheesthree !border-[#00000026] !border-[1px] pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[47px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[45px] pb-[24px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[65px] relative overflow-hidden'>
-                  <Image src={datatwo[2].backgroundimage} alt="test" className='absolute left-0 bottom-0 w-full' />
+                  <Image src={datatwo[2].backgroundimage} alt="test" className='absolute left-0 bottom-0 w-full bg-cover' />
                   <div className='w-[79px]' dangerouslySetInnerHTML={{ __html: datatwo[1].imagesvg }} />
                   <h1 className='imageonedatathreon text-[40px] pt-[15px] pb-[17px]' dangerouslySetInnerHTML={{ __html: datatwo[1].terxttwo }}></h1>
                   <div className='flex gap-[33px] items-center '>
@@ -194,7 +194,7 @@ const Pagethree = () => {
                   </div>
               </div>
             <div className='paddinoiuretheesoneonethe !border-[#00000026] !border-[1px] pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[47px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[45px] pb-[24px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[65px] relative overflow-hidden flex flex-col justify-between'>
-                <Image src={datatwo[1].backgroundimage} alt="test" className='absolute left-0 bottom-0 w-full' />
+                <Image src={datatwo[1].backgroundimage} alt="test" className='absolute left-0 bottom-0 w-full bg-cover' />
                 <div className='w-[79px]' dangerouslySetInnerHTML={{ __html: datatwo[2].imagesvg }} />
                 <h1 className='imageonedatathreon text-[40px] pt-[15px] pb-[17px]' dangerouslySetInnerHTML={{ __html: datatwo[2].terxttwo }}></h1>
                 <div className='flex gap-[33px] items-center '>
