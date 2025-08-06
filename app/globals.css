@@ -66,9 +66,13 @@ body {
 
 @layer utilities{
   .thisfowborder{
-        backdrop-filter: blur(20px);
+      backdrop-filter: blur(20px);
     filter: url(#glass-distortion);
     border-radius: 50%;
+     border:double 1px transparent;
+  background-image: linear-gradient(rgba(137, 127, 127, 0.2), rgba(137, 127, 127, 0.2)),linear-gradient(120deg, #fff, rgba(137, 127, 127, 0.2), #fff, rgba(137, 127, 127, 0.2));
+  background-origin:border-box;
+  background-clip:content-box, border-box;
  
   }
   .blur-text {
@@ -102,34 +106,44 @@ body {
 background: linear-gradient(180deg, rgba(255, 40, 158, 0.23) 0%, rgba(66, 18, 45, 0.61) 100%);
 backdrop-filter: blur(3px);
   filter: url(#glass-distortion);
+  border: 0.5px solid rgba(255, 40, 158, 0.23);
   
   }
   .paddinoiuretheesthree{
 background: linear-gradient(180deg, rgba(14, 118, 204, 0.61) 0%, rgba(146, 6, 192, 0.00) 100%);
 backdrop-filter: blur(3px);
   filter: url(#glass-distortion);
+  border: 0.5px solid rgba(14, 118, 204, 0.61);
   }
   .paddinoiuretheesonetwo{
     background: linear-gradient(180deg, rgba(8, 120, 85, 0.20) 0%, rgba(8, 120, 85, 0.20) 54.81%);
     backdrop-filter: blur(3px);
   filter: url(#glass-distortion);
+  border: 0.5px solid rgba(8, 120, 85, 0.20);
+  
   }
   .paddinoiuretheestwo{
     background: linear-gradient(180deg, rgba(8, 120, 85, 0.61) 0%, rgba(12, 171, 121, 0.09) 50%, rgba(15, 222, 157, 0.24) 100%);
     backdrop-filter: blur(3px);
   filter: url(#glass-distortion);
+  border: 0.5px solid rgba(12, 171, 121, 0.09);
 
   }
   .paddinoiuretheesone{
     background: linear-gradient(180deg, rgba(26, 25, 25, 0.61) 0%, rgba(0, 70, 99, 0.61) 46.15%, rgba(0, 155, 219, 0.61) 100%);
     backdrop-filter: blur(3px);
   filter: url(#glass-distortion);
+  border: 0.5px solid rgba(0, 70, 99, 0.61);
   }
   .paddinoiuretheessnap{
-background: rgba(0, 0, 0, 0.20);
-backdrop-filter: blur(3px);
+  background: rgba(0, 0, 0, 0.20);
+  backdrop-filter: blur(3px);
   filter: url(#glass-distortion);
-  border: 1px solid #ffffff;
+  /* border: 1px solid #ffffff; */
+  border:double 1px transparent;
+  background-image: linear-gradient(#02030A, #02030A),linear-gradient(120deg, #02030A, rgb(255, 255, 255), #02030A, rgb(255, 255, 255));
+  background-origin:border-box;
+  background-clip:content-box, border-box;
   }
   .imageonedatathreon{
     color: #F5F5F5;

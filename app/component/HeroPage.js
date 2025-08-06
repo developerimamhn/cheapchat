@@ -9,6 +9,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import image3 from './image/image3 (2).png';
+import image4 from './image/image5.png';
+import image5 from './image/image6.png';
+import Image from 'next/image';
 
 
 
@@ -82,11 +86,7 @@ const HeroPage = () => {
   }, []);
   
   const dataone = [  {
-  imagesvg : `<svg className='w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[32px]' viewBox="0 0 79 78" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="79" height="78" rx="39" fill="#897F7F" fill-opacity="0.2"/>
-              <path d="M47.2917 37.9583H47.3125M38.9583 37.9583H38.9792M30.625 37.9583H30.6458M46.8751 53.7918L58.7501 57.7501L54.7917 45.8751C54.7917 45.8751 56.6667 43.1667 56.6667 37.9583C56.6667 28.1783 48.7384 20.25 38.9583 20.25C29.1783 20.25 21.25 28.1783 21.25 37.9583C21.25 47.7384 29.1783 55.6667 38.9583 55.6667C44.3431 55.6667 46.8751 53.7918 46.8751 53.7918Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              `,
+  imagesvg : image3,
   textone : 'Осталось лимитов <br className="sm:block hidden" /> 100%',
   terxttwo : 'Начнем<br className="sm:block hidden" />новый<br className="sm:block hidden" />диалог?',
   textbtn : 'НАЧАТЬ',
@@ -270,31 +270,44 @@ const textRefs = useRef(null);
                         Чем я могу тебе помочь?
                       </h1>
                       <div className='grid grid-cols-2 pt-[24px] sm:pt-[32px] md:pt-[36px] lg:pt-[40px] xl:pt-[48px] 2xl:pt-[55px] gap-[10px] sm:gap-[20px] md:gap-[24px] lg:gap-[32px] xl:gap-[36px] 2xl:gap-[42px]'>
-                        <div className='grid-item-1 paddinoiurethees rounded-[16px] sm:rounded-[20px] md:rounded-[24px] lg:rounded-[32px] xl:rounded-[36px] 2xl:rounded-[40px] pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[47px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[45px] pb-[15px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[65px] relative overflow-hidden flex flex-col justify-between'>
+                        <div className='grid-item-1 paddinoiurethees rounded-[16px] sm:rounded-[20px] md:rounded-[24px] lg:rounded-[32px] xl:rounded-[36px] 2xl:rounded-[40px]  relative overflow-hidden'>
                           <div className='w-full absolute right-0 bottom-0' dangerouslySetInnerHTML={{ __html: dataone[0].backgroundimage }} />
-                          <div className='w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[79px] bureeffefcdtewwa thisfowborder' dangerouslySetInnerHTML={{ __html: dataone[0].imagesvg }} />
-                          <h1 className='imageonedata text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[32px] inline-block pt-[10px] sm:pt-[11px] md:pt-[12px] lg:pt-[13px]' dangerouslySetInnerHTML={{ __html: dataone[0].textone }}></h1>
-                          <h1 className='imageonedatathre text-[20px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[64px] 2xl:text-[96px] pt-[88px] pb-[78px]' dangerouslySetInnerHTML={{ __html: dataone[0].terxttwo }}></h1>
-                          <button className='texndserbtnback w-full py-[8px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[20px] 2xl:py-[24px]' ><span className='texndserbtn text-[18px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px]' dangerouslySetInnerHTML={{ __html: dataone[0].textbtn }}></span></button>
+                            <div className='pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[47px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[45px] pb-[15px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[65px] flex flex-col justify-between'>
+                              
+                              {/* <div className='w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[79px] bureeffefcdtewwa thisfowborder' dangerouslySetInnerHTML={{ __html: dataone[0].imagesvg }} /> */}
+                              <Image src={image3} alt='ext' className='w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[79px]'/>
+                              <h1 className='imageonedata text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[32px] inline-block pt-[10px] sm:pt-[11px] md:pt-[12px] lg:pt-[13px]' dangerouslySetInnerHTML={{ __html: dataone[0].textone }}></h1>
+                              <h1 className='imageonedatathre text-[20px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[64px] 2xl:text-[96px] pt-[88px] pb-[78px]' dangerouslySetInnerHTML={{ __html: dataone[0].terxttwo }}></h1>
+                              <button className='texndserbtnback w-full py-[8px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[20px] 2xl:py-[24px]' ><span className='texndserbtn text-[18px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px]' dangerouslySetInnerHTML={{ __html: dataone[0].textbtn }}></span></button>
+                          </div>
                         </div>
                         <div className='grid grid-rows-2 gap-[15px] sm:gap-[24px] md:gap-[32px] lg:gap-[36px] xl:gap-[40px] 2xl:gap-[47px]'>
-                          <div className='grid-item-2 paddinoiuretheessnap rounded-[16px] sm:rounded-[20px] md:rounded-[24px] lg:rounded-[32px] xl:rounded-[36px] 2xl:rounded-[40px] !border-[#00000026] !border-[1px] pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[47px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[45px] pb-[15px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[65px] relative overflow-hidden'>
-                              <div className='w-full absolute right-0 bottom-0' dangerouslySetInnerHTML={{ __html: dataone[1].backgroundimage }} />
-                              <div className='w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[79px] bureeffefcdtewwa thisfowborder' dangerouslySetInnerHTML={{ __html: dataone[1].imagesvg }} />
-                              <h1 className='imageonedatathreon text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px] pt-[15px] pb-[17px]' dangerouslySetInnerHTML={{ __html: dataone[1].terxttwo }}></h1>
-                              <div className='flex gap-[14px] sm:gap-[15px] md:gap-[16px] lg:gap-[20px] xl:gap-[24px] 2xl:gap-[33px]'>
-                                <button className='texndserbtnback !bg-[#454e71c9] w-full py-[2px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[20px] 2xl:py-[24px]' ><span className='texndserbtn text-[10px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[30px]' dangerouslySetInnerHTML={{ __html: dataone[1].textbtn }}></span></button>
-                                <div className='text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[64px] 2xl:text-[77px]' dangerouslySetInnerHTML={{ __html: dataone[1].svgbutton }} />
-                              </div>
+                          <div className='grid-item-2 paddinoiuretheessnap rounded-[16px] sm:rounded-[20px] md:rounded-[24px] lg:rounded-[32px] xl:rounded-[36px] 2xl:rounded-[40px] !border-[#00000026] !border-[1px]  relative overflow-hidden h-fit'>
+                            <div className='w-full absolute right-0 bottom-0' dangerouslySetInnerHTML={{ __html: dataone[1].backgroundimage }} />
+                                <div className='pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[47px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[45px] pb-[15px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[65px] flex flex-col justify-between h-fit'>
+                                  
+                                  {/* <div className='w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[79px] bureeffefcdtewwa thisfowborder' dangerouslySetInnerHTML={{ __html: dataone[1].imagesvg }} /> */}
+                                  {/* <Image src={dataone[0].imagesvg} alt="test" className='w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[79px]' /> */}
+                                  <Image src={image4} alt='ext' className='w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[79px]'/>
+                                  <h1 className='imageonedatathreon text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px] pt-[15px] pb-[17px]' dangerouslySetInnerHTML={{ __html: dataone[1].terxttwo }}></h1>
+                                  <div className='flex gap-[14px] sm:gap-[15px] md:gap-[16px] lg:gap-[20px] xl:gap-[24px] 2xl:gap-[33px]'>
+                                    <button className='texndserbtnback !bg-[#454e71c9] w-full py-[2px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[20px] 2xl:py-[24px]' ><span className='texndserbtn text-[10px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[30px]' dangerouslySetInnerHTML={{ __html: dataone[1].textbtn }}></span></button>
+                                    <div className='text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[64px] 2xl:text-[77px]' dangerouslySetInnerHTML={{ __html: dataone[1].svgbutton }} />
+                                  </div>
+                                </div>
                           </div>
-                        <div className='paddinoiuretheessnap rounded-[16px] sm:rounded-[20px] md:rounded-[24px] lg:rounded-[32px] xl:rounded-[36px] 2xl:rounded-[40px] !border-[#00000026] !border-[1px] pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[47px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[45px] pb-[15px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[65px] relative overflow-hidden flex flex-col justify-between grid-item-3'>
-                            <div className='w-full absolute right-0 bottom-0' dangerouslySetInnerHTML={{ __html: dataone[2].backgroundimage }} />
-                            <div className='w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[79px] bureeffefcdtewwa thisfowborder' dangerouslySetInnerHTML={{ __html: dataone[2].imagesvg }} />
-                            <h1 className='imageonedatathreon text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px] pt-[15px] pb-[17px]' dangerouslySetInnerHTML={{ __html: dataone[2].terxttwo }}></h1>
-                            <div className='flex gap-[14px] sm:gap-[15px] md:gap-[16px] lg:gap-[20px] xl:gap-[24px] 2xl:gap-[33px]'>
+                        <div className='paddinoiuretheessnap rounded-[16px] sm:rounded-[20px] md:rounded-[24px] lg:rounded-[32px] xl:rounded-[36px] 2xl:rounded-[40px] !border-[#00000026] !border-[1px] relative overflow-hidden flex flex-col justify-between grid-item-3'>
+                          <div className='w-full absolute right-0 bottom-0' dangerouslySetInnerHTML={{ __html: dataone[2].backgroundimage }} />
+                          <div className='pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[47px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[45px] pb-[15px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[65px] flex flex-col justify-between'>
+                            
+                            {/* <div className='w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[79px] bureeffefcdtewwa thisfowborder' dangerouslySetInnerHTML={{ __html: dataone[2].imagesvg }} /> */}
+                            <Image src={image5} alt='ext' className='w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[79px]'/>
+                            <h1 className='imageonedatathreon text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px] pt-[16px] sm:pt-[20px] md:pt-[24px] lg:pt-[32px] xl:pt-[36px] 2xl:pt-[47px] pb-[17px]' dangerouslySetInnerHTML={{ __html: dataone[2].terxttwo }}></h1>
+                            <div className='flex gap-[14px] sm:gap-[15px] md:gap-[16px] lg:gap-[20px] xl:gap-[24px] 2xl:gap-[33px] pt-[15px]'>
                               <button className='texndserbtnback !bg-[#454e71c9] w-full py-[2px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[20px] 2xl:py-[24px]' ><span className='texndserbtn text-[10px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[30px]' dangerouslySetInnerHTML={{ __html: dataone[2].textbtn }}></span></button>
                               <div className='text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[64px] 2xl:text-[77px] ' dangerouslySetInnerHTML={{ __html: dataone[2].svgbutton }} />
                             </div>
+                        </div>
                         </div>
                       </div>
                       </div>
