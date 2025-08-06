@@ -291,7 +291,7 @@ const textRefs = useRef(null);
                                   <Image src={image4} alt='ext' className='w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[79px]'/>
                                   <h1 className='imageonedatathreon text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px] pt-[15px] pb-[17px]' dangerouslySetInnerHTML={{ __html: dataone[1].terxttwo }}></h1>
                                   <div className='flex gap-[14px] sm:gap-[15px] md:gap-[16px] lg:gap-[20px] xl:gap-[24px] 2xl:gap-[33px]'>
-                                    <button className='texndserbtnback !bg-[#454e71c9] w-full py-[2px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[20px] 2xl:py-[24px]' ><span className='texndserbtn text-[10px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[30px]' dangerouslySetInnerHTML={{ __html: dataone[1].textbtn }}></span></button>
+                                    <button className='texndserbtnback !bg-[#454e71c9] hover:!bg-[#3e4870c9] w-full py-[2px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[20px] 2xl:py-[24px]' ><span className='texndserbtn text-[10px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[30px]' dangerouslySetInnerHTML={{ __html: dataone[1].textbtn }}></span></button>
                                     <div className='text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[64px] 2xl:text-[77px]' dangerouslySetInnerHTML={{ __html: dataone[1].svgbutton }} />
                                   </div>
                                 </div>
@@ -304,7 +304,7 @@ const textRefs = useRef(null);
                             <Image src={image5} alt='ext' className='w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[79px]'/>
                             <h1 className='imageonedatathreon text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px] pt-[16px] sm:pt-[20px] md:pt-[24px] lg:pt-[32px] xl:pt-[36px] 2xl:pt-[47px] pb-[17px]' dangerouslySetInnerHTML={{ __html: dataone[2].terxttwo }}></h1>
                             <div className='flex gap-[14px] sm:gap-[15px] md:gap-[16px] lg:gap-[20px] xl:gap-[24px] 2xl:gap-[33px] pt-[15px]'>
-                              <button className='texndserbtnback !bg-[#454e71c9] w-full py-[2px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[20px] 2xl:py-[24px]' ><span className='texndserbtn text-[10px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[30px]' dangerouslySetInnerHTML={{ __html: dataone[2].textbtn }}></span></button>
+                              <button className='texndserbtnback !bg-[#454e71c9] hover:!bg-[#3e4870c9] w-full py-[2px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[20px] 2xl:py-[24px]' ><span className='texndserbtn text-[10px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[30px]' dangerouslySetInnerHTML={{ __html: dataone[2].textbtn }}></span></button>
                               <div className='text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[64px] 2xl:text-[77px] ' dangerouslySetInnerHTML={{ __html: dataone[2].svgbutton }} />
                             </div>
                         </div>

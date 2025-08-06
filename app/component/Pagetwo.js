@@ -10,6 +10,9 @@ import Image from 'next/image';
 import image2 from './image/iamsaseszas.png';
 import image4 from './image/backgrundtexxt.png';
 import image3 from './image/image4.png';
+import image8 from './image/canada.png';
+import image9 from './image/image5 (2).png';
+import image10 from './image/numbeingss.png';
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -178,7 +181,7 @@ const Pagetwo = () => {
           <div className='grid grid-cols-2 pt-[32px] sm:pt-[36px] md:pt-[40px] lg:pt-[48px] xl:pt-[64px] 2xl:pt-[85px] gap-[10px] sm:gap-[20px] md:gap-[24px] lg:gap-[32px] xl:gap-[36px] 2xl:gap-[42px]'>
             <div className='paddinoiuretheestwo rounded-[16px] sm:rounded-[20px] md:rounded-[24px] lg:rounded-[32px] xl:rounded-[36px] 2xl:rounded-[40px] pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[47px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[45px] pb-[15px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[65px] relative overflow-hidden flex flex-col justify-between'>
             <Image src={datatwo[0].backgroundimage} alt="test" className='absolute right-0 bottom-1 h-[86%]  2xl:h-[88%] w-[100%] sm:w-[50%]' />
-              <div className='w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[79px] thisfowborder' dangerouslySetInnerHTML={{ __html: datatwo[0].imagesvg }} />
+              <Image src={image8} alt='ext' className='w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[79px]'/>
               <h1 className='imageonedata text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[32px] inline-block pt-[10px] sm:pt-[11px] md:pt-[12px] lg:pt-[13px]' dangerouslySetInnerHTML={{ __html: datatwo[0].textone }}></h1>
               <h1 className='imageonedatathre text-[20px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[64px] 2xl:text-[96px] pt-[88px] pb-[78px]' dangerouslySetInnerHTML={{ __html: datatwo[0].terxttwo }}></h1>
               <button className='texndserbtnback w-full py-[8px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[20px] 2xl:py-[18px]' ><span className='texndserbtn text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px]' dangerouslySetInnerHTML={{ __html: datatwo[0].textbtn }}></span></button>
@@ -186,19 +189,19 @@ const Pagetwo = () => {
             <div className='grid grid-rows-2 gap-[15px] sm:gap-[24px] md:gap-[32px] lg:gap-[36px] xl:gap-[40px] 2xl:gap-[47px]'>
               <div className='paddinoiuretheesonetwo rounded-[16px] sm:rounded-[20px] md:rounded-[24px] lg:rounded-[32px] xl:rounded-[36px] 2xl:rounded-[40px] !border-[#00000026] !border-[1px] pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[47px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[45px] pb-[15px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[65px] relative overflow-hidden'>
                   <Image src={datatwo[2].backgroundimage} alt="test" className='absolute left-0 -bottom-2 h-[76%] w-[100%] sm:w-[55%]' />
-                  <div className='w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[79px] thisfowborder thisfowborder' dangerouslySetInnerHTML={{ __html: datatwo[1].imagesvg }} />
+                  <Image src={image9} alt='ext' className='w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[79px]'/>
                   <h1 className='imageonedatathreon text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px] pt-[15px] pb-[17px]' dangerouslySetInnerHTML={{ __html: datatwo[1].terxttwo }}></h1>
                   <div className='flex gap-[14px] sm:gap-[15px] md:gap-[16px] lg:gap-[20px] xl:gap-[24px] 2xl:gap-[33px] items-center '>
-                    <button className='texndserbtnback !bg-[#454e71c9] w-full py-[2px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[20px] 2xl:py-[24px]' ><span className='texndserbtn text-[10px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[30px]' dangerouslySetInnerHTML={{ __html: datatwo[1].textbtn }}></span></button>
+                    <button className='texndserbtnback hover:!bg-[#3e4870c9] !bg-[#454e71c9] w-full py-[2px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[20px] 2xl:py-[24px]' ><span className='texndserbtn text-[10px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[30px]' dangerouslySetInnerHTML={{ __html: datatwo[1].textbtn }}></span></button>
                     <div className='w-[48px] xl:w-[64px] 2xl:w-[77px]' dangerouslySetInnerHTML={{ __html: datatwo[1].svgbutton }} />
                   </div>
               </div>
             <div className='paddinoiuretheesonetwo rounded-[16px] sm:rounded-[20px] md:rounded-[24px] lg:rounded-[32px] xl:rounded-[36px] 2xl:rounded-[40px] !border-[#00000026] !border-[1px] pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[47px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[45px] pb-[15px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[65px] relative overflow-hidden flex flex-col justify-between'>
                 <Image src={datatwo[1].backgroundimage} alt="test" className='absolute left-0 bottom-0  h-full w-[95%] sm:w-[55%]' />
-                <div className='w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[79px] thisfowborder' dangerouslySetInnerHTML={{ __html: datatwo[2].imagesvg }} />
+                 <Image src={image10} alt='ext' className='w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[79px]'/>
                 <h1 className='imageonedatathreon text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] 2xl:text-[40px] pt-[15px] pb-[17px]' dangerouslySetInnerHTML={{ __html: datatwo[2].terxttwo }}></h1>
                 <div className='flex gap-[14px] sm:gap-[15px] md:gap-[16px] lg:gap-[20px] xl:gap-[24px] 2xl:gap-[33px] items-center '>
-                  <button className='texndserbtnback !bg-[#454e71c9] w-full py-[2px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[20px] 2xl:py-[24px]' ><span className='texndserbtn text-[10px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[30px]' dangerouslySetInnerHTML={{ __html: datatwo[2].textbtn }}></span></button>
+                  <button className='texndserbtnback hover:!bg-[#3e4870c9] !bg-[#454e71c9] w-full py-[2px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[20px] 2xl:py-[24px]' ><span className='texndserbtn text-[10px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[30px]' dangerouslySetInnerHTML={{ __html: datatwo[2].textbtn }}></span></button>
                   <div className='w-[48px] xl:w-[64px] 2xl:w-[77px]' dangerouslySetInnerHTML={{ __html: datatwo[2].svgbutton }} />
                 </div>
             </div>
